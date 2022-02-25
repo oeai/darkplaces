@@ -212,6 +212,7 @@ cvar_t g_domination = {CF_SERVER, "g_domination", "0", "hacky workaround"};
 cvar_t g_freezetag = {CF_SERVER, "g_freezetag", "0", "hacky workaround"};
 cvar_t g_keepaway = {CF_SERVER, "g_keepaway", "0", "hacky workaround"};
 cvar_t g_keyhunt = {CF_SERVER, "g_keyhunt", "0", "hacky workaround"};
+cvar_t g_nexball = {CF_SERVER, "g_nexball", "0", "hacky workaround"};
 
 server_t sv;
 server_static_t svs;
@@ -523,10 +524,12 @@ void SV_Init (void)
 	Cvar_RegisterVariable (&g_freezetag);
 	Cvar_RegisterVariable (&g_keepaway);
 	Cvar_RegisterVariable (&g_keyhunt);
+	Cvar_RegisterVariable (&g_nexball);
 	Cvar_RegisterVirtual (&g_domination, "g_dom");
 	Cvar_RegisterVirtual (&g_freezetag, "g_ft");
 	Cvar_RegisterVirtual (&g_keepaway, "g_ka");
 	Cvar_RegisterVirtual (&g_keyhunt, "g_kh");
+	Cvar_RegisterVirtual (&g_nexball, "g_nb");
 
 	Cvar_RegisterVariable (&sv_disablenotify);
 	Cvar_RegisterVariable (&coop);
