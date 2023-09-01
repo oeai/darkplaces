@@ -3112,6 +3112,9 @@ static void SV_Physics_ClientEntity(prvm_edict_t *ent)
 		break;
 	}
 
+	if (sv_playerphysicsqc.integer & 2)
+		return;
+
 	SV_CheckVelocity (ent);
 
 	SV_LinkEdict(ent);

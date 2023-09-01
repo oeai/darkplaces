@@ -1693,7 +1693,7 @@ void(float effectnum, vector org, vector vel, float howmany) pointparticles = #3
 //field definitions:
 .vector movement;
 //cvar definitions:
-//"sv_playerphysicsqc" (0/1, default 1, allows user to disable qc player physics)
+//"sv_playerphysicsqc" (see cvar description)
 //engine-called QC prototypes:
 //void() SV_PlayerPhysics;
 //description:

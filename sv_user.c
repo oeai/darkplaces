@@ -580,7 +580,7 @@ void SV_PlayerPhysics (void)
 	SV_CheckVelocity(host_client->edict);
 
 	// LadyHavoc: QuakeC replacement for SV_PlayerPhysics (player movement)
-	if (PRVM_serverfunction(SV_PlayerPhysics) && sv_playerphysicsqc.integer)
+	if (PRVM_serverfunction(SV_PlayerPhysics) && (sv_playerphysicsqc.integer & 1))
 	{
 		PRVM_serverglobalfloat(time) = sv.time;
 		PRVM_serverglobaledict(self) = PRVM_EDICT_TO_PROG(host_client->edict);
