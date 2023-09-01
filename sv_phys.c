@@ -2925,6 +2925,7 @@ static void SV_Physics_ClientEntity_NoThink (prvm_edict_t *ent)
 	}
 }
 
+// asynchronous path
 void SV_Physics_ClientMove(void)
 {
 	prvm_prog_t *prog = SVVM_prog;
